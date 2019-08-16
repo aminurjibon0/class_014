@@ -1,0 +1,1302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Bootstrap 4 Components</title>
+  </head>
+  <body>
+     <section id="header" class="mb-0">
+         <div class="navbar navbar-expand-md navbar-light bg-custom d-flex justify-content-between fixed-top custom-header-bg">
+             <a href="#" class="navbar-brand text-uppercase font-weight-bolder text-secondary">Components</a>
+             <div class="navbar-toggler bg-light" data-toggle="collapse" data-target="#navbarCollapse">
+                 <div class="navbar-toggler-icon"></div>
+             </div>
+             <div class="collapse navbar-collapse" id="navbarCollapse">
+                 <ul class="navbar-nav ml-auto">
+                     <li class="nav-item"><a href="#alert" class="nav-link text-uppercase font-weight-bold text-info nav-link-custom">Alert</a></li>
+                     <li class="nav-item"><a href="#badge" class="nav-link text-uppercase font-weight-bold text-info nav-link-custom">Badge</a></li>
+                     <li class="nav-item"><a href="#breadcrumb" class="nav-link text-uppercase font-weight-bold text-info nav-link-custom">Breadcrumb</a></li>
+                     <li class="nav-item"><a href="#button" class="nav-link text-uppercase font-weight-bold text-info nav-link-custom">Button</a></li>
+                     <li class="nav-item"><a href="#card" class="nav-link text-uppercase font-weight-bold text-info nav-link-custom">Card</a></li>
+                     <li class="nav-item"><a href="#carousel" class="nav-link text-uppercase font-weight-bold text-info nav-link-custom">Carousel</a></li>
+                     <li class="nav-item dropdown">
+                         <a href="#" class="nav-link text-uppercase font-weight-bold text-info nav-link-custom dropdown-toggle" data-toggle="dropdown">More</a>
+                         <div class="dropdown-menu">
+                             <a class="dropdown-item" href="#dropdown">Dropdowns</a>
+                             <a class="dropdown-item" href="#form">Forms</a>
+                             <a class="dropdown-item" href="#inputGroup">Input group</a>
+                             <a class="dropdown-item" href="#jumbotron">Jumbotron</a>
+                             <a class="dropdown-item" href="#listGroup">List group</a>
+                             <a class="dropdown-item" href="#mediaObject">Media object</a>
+                             <a class="dropdown-item" href="#modal">Modal</a>
+                             <a class="dropdown-item" href="#nav">Navs</a>
+                             <a class="dropdown-item" href="#navbar">Navbar</a>
+                             <a class="dropdown-item" href="#pagination">Pagination</a>
+                             <a class="dropdown-item" href="#popover">Popovers</a>
+                             <a class="dropdown-item" href="#progressBar">Progress</a>
+                             <a class="dropdown-item" href="scroll.html">Scrollspy</a>
+                             <a class="dropdown-item" href="#spinner">Spinners</a>
+                             <a class="dropdown-item" href="#toast">Toasts</a>
+                             <a class="dropdown-item" href="#tooltip">Tooltips</a>
+                         </div>
+                    </li>
+                     <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold text-info nav-link-custom">Collapse</a></li>
+                 </ul>
+             </div>
+         </div>
+     </section>
+<!--     navbar end-->
+     
+<!--     alert start-->
+    <section id="alert" class="bg-light py-5" data-spy="scroll" data-target="#navbarCollapse">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="display-4 text-center text-success">Alert</h1>
+                    <p class="text-center lead">alert is a container with content and dismissable button on the right side</p>
+                </div>
+            </div>
+            <div class="row pt-5 bb-4">
+                <div class="col-md-6">
+                    <h2 class="text-uppercase text-info mb-3">Alert without dismissable</h2>
+                    <p class="text-muted">There are 8 types of alert boxes you can create with only pre-define classes. To make an alert box just type <mark>.alert</mark> class in a div element. link this <code>&lt;div class="alert"&gt;&lt;/div&gt;</code>.</p>
+                    <p class="text-muted">8 different alert style already has existed in bootstrap 4. You can call them with their classes. They are </p>
+                    <ul class="list-unstyled">
+                        <li class="list-item"><code>.alert-primary</code></li>
+                        <li class="list-item"><code>.alert-secondary</code></li>
+                        <li class="list-item"><code>.alert-success</code></li>
+                        <li class="list-item"><code>.alert-info</code></li>
+                        <li class="list-item"><code>.alert-warning</code></li>
+                        <li class="list-item"><code>.alert-danger</code></li>
+                        <li class="list-item"><code>.alert-dark</code></li>
+                        <li class="list-item"><code>.alert-light</code></li>
+                    </ul>
+                    <p class="text-muted">See the example of all alert boxes on the right.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="alert alert-primary"><strong>Primary!</strong> This is primary alert box</div>
+                    <div class="alert alert-secondary"><strong>Primary!</strong> This is primary alert box</div>
+                    <div class="alert alert-success"><strong>Primary!</strong> This is primary alert box</div>
+                    <div class="alert alert-info"><strong>Primary!</strong> This is primary alert box</div>
+                    <div class="alert alert-warning"><strong>Primary!</strong> This is primary alert box</div>
+                    <div class="alert alert-danger"><strong>Primary!</strong> This is primary alert box</div>
+                    <div class="alert alert-dark"><strong>Primary!</strong> This is primary alert box</div>
+                    <div class="alert alert-light"><strong>Primary!</strong> This is primary alert box</div>
+                </div>
+            </div>
+            <div class="row pt-5">
+               <div class="col-md-6 order-sm-12">
+                    <div class="alert alert-primary show fade">
+                        <strong>Primary!</strong> This is primary alert box
+                        <button type="button" class="close" data-dismiss="alert">
+                            <span aria-label="hidden">&times;</span>
+                        </button>
+                    </div>
+                    <div class="alert alert-secondary show fade">
+                        <strong>Primary!</strong> This is primary alert box
+                        <button type="button" class="close" data-dismiss="alert">
+                            <span aria-label="hidden">&times;</span>
+                        </button>
+                    </div>
+                    <div class="alert alert-success show fade">
+                        <strong>Primary!</strong> This is primary alert box
+                        <button type="button" class="close" data-dismiss="alert">
+                            <span aria-label="hidden">&times;</span>
+                        </button>
+                    </div>
+                    <div class="alert alert-info show fade">
+                        <strong>Primary!</strong> This is primary alert box
+                        <button type="button" class="close" data-dismiss="alert">
+                            <span aria-label="hidden">&times;</span>
+                        </button>
+                    </div>
+                    <div class="alert alert-warning show fade">
+                        <strong>Primary!</strong> This is primary alert box
+                        <button type="button" class="close" data-dismiss="alert">
+                            <span aria-label="hidden">&times;</span>
+                        </button>
+                    </div>
+                    <div class="alert alert-danger show fade">
+                        <strong>Primary!</strong> This is primary alert box
+                        <button type="button" class="close" data-dismiss="alert">
+                            <span aria-label="hidden">&times;</span>
+                        </button>
+                    </div>
+                    <div class="alert alert-dark show fade">
+                        <strong>Primary!</strong> This is primary alert box
+                        <button type="button" class="close" data-dismiss="alert">
+                            <span aria-label="hidden">&times;</span>
+                        </button>
+                    </div>
+                    <div class="alert alert-light show fade">
+                        <strong>Primary!</strong> This is primary alert box
+                        <button type="button" class="close" data-dismiss="alert">
+                            <span aria-label="hidden">&times;</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6 order-sm-1">
+                    <h2 class="text-uppercase text-info mb-3">Alert with dismissable</h2>
+                    <p class="text-muted">To make a dismissable button, create a button element and with a class <mark>.close</mark> and add an <code>data-dismiss="alert"</code> attribute to button. Inside the button add <mark>span</mark><code> element </code> with <code> &amp;times&#59;</code>code. The &amp;times&#59; will show a cross(x). <span class="highlight">Don't forget to add <code>.alert-dismissable </code> class to the alert button to do this properly.</span></p>
+                    <p class="text-muted">If you want you can see some fade effect. To see the fade effect add to classes those are <code>.show, .fade</code></p>
+
+                    <p class="text-muted">See the example of all alert boxes with dismissable button on the right.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                <div class="section_end"><span class="cross"><span class="cross_text">&times;</span></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--     alert end-->
+
+<!--     badge start-->
+    <section id="badge" class="py-5" data-spy="scroll" data-target="#navbarCollapse">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="display-4 text-center text-success">Badge</h1>
+                    <p class="text-center lead">Badge is a part of link, heading, message, icon etc.</p>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col-md-6 pb-3 pb-md-0">
+                    <h3 class="text-uppercase mb-3 text-info">Badge inside heading</h3>
+                    <h1>Heading 1 <span class="badge badge-primary">22</span></h1>
+                    <h2>Heading 2 <span class="badge badge-secondary">43</span></h2>
+                    <h3>Heading 3 <span class="badge badge-success">62</span></h3>
+                    <h4>Heading 4 <span class="badge badge-info">23</span></h4>
+                    <h5>Heading 5 <span class="badge badge-warning">45</span></h5>
+                    <h6>Heading 6 <span class="badge badge-danger">16</span></h6>
+                </div>
+                <div class="col-md-6 pb-3 pb-md-0">
+                    <h3 class="text-uppercase mb-3 text-info">Badge inside button</h3>
+                    <button type="button" class="btn btn-primary btn-lg m-2">Button <span class="badge badge-danger">22</span></button>
+                    <button type="button" class="btn btn-secondary btn-lg m-2">Button 2 <span class="badge badge-primary">43</span></button>
+                    <button type="button" class="btn btn-success btn-lg m-2">Button 3 <span class="badge badge-primary">62</span></button>
+                    <button type="button" class="btn btn-info btn-lg m-2">Button 4 <span class="badge badge-primary">23</span></button>
+                    <button type="button" class="btn btn-warning btn-lg m-2">Button 5 <span class="badge badge-primary">45</span></button>
+                    <button type="button" class="btn btn-danger btn-lg m-2">Button 6 <span class="badge badge-primary">16</span></button>
+                    <button type="button" class="btn btn-dark btn-lg m-2">Button 7 <span class="badge badge-primary">56</span></button>
+                    <button type="button" class="btn btn-light btn-lg m-2">Button 8 <span class="badge badge-primary">28</span></button>
+                </div>
+                <div class="w-100 my-4 d-none d-md-block"></div>
+                <div class="col-md-6 pb-3 pb-md-0">
+                    <h3 class="text-uppercase mb-3 text-info">Badge Pill</h3>
+                    <p>Badge Pills <span class="badge badge-primary badge-pill">primary</span></p>
+                    <p>Badge Pills <span class="badge badge-secondary badge-pill">secondary</span></p>
+                    <p>Badge Pills <span class="badge badge-success badge-pill">success</span></p>
+                    <p>Badge Pills <span class="badge badge-info badge-pill">info</span></p>
+                    <p>Badge Pills <span class="badge badge-warning badge-pill">warning</span></p>
+                    <p>Badge Pills <span class="badge badge-danger badge-pill">danger</span></p>
+                    <p>Badge Pills <span class="badge badge-dark badge-pill">dark</span></p>
+                    <p>Badge Pills <span class="badge badge-light badge-pill">light</span></p>
+                </div>
+                <div class="col-md-6 pb-3 pb-md-0">
+                    <h3 class="text-uppercase mb-3 text-info">Badge inside Links</h3>
+                    <a href="#"><span class="badge badge-pill badge-primary">primary</span></a>
+                    <a href="#"><span class="badge badge-pill badge-secondary">secondary</span></a>
+                    <a href="#"><span class="badge badge-pill badge-success">success</span></a>
+                    <a href="#"><span class="badge badge-pill badge-info">info</span></a>
+                    <a href="#"><span class="badge badge-pill badge-danger">danger</span></a>
+                    <a href="#"><span class="badge badge-pill badge-warning">warning</span></a>
+                    <a href="#"><span class="badge badge-pill badge-dark">dark</span></a>
+                    <a href="#"><span class="badge badge-pill badge-light">light</span></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                <div class="section_end"><span class="cross"><span class="cross_text">&times;</span></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--     badge start-->
+
+<!--      breadcrumb start-->
+    <section id="breadcrumb" class="py-5" data-spy="scroll" data-target="#navbarCollapse">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="display-4 text-center text-success">Breadcrumb</h1>
+                    <p class="text-center lead text-light">Badge is a part of link, heading, message, icon etc.</p>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col-md-12">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">About</a></li>
+                        <li class="breadcrumb-item"><a href="#">Goals</a></li>
+                        <li class="breadcrumb-item active">Step 1</li>
+                    </ul>
+                </div>
+                <div class="col-md-8">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Gallery</a></li>
+                        <li class="breadcrumb-item"><a href="#">Work</a></li>
+                        <li class="breadcrumb-item"><a href="#">Graphic Design</a></li>
+                        <li class="breadcrumb-item active">Icon</li>
+                    </ul>
+                </div>
+                <div class="col-md-8 mx-auto">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Portfolio</a></li>
+                        <li class="breadcrumb-item"><a href="#">Work</a></li>
+                        <li class="breadcrumb-item"><a href="#">Web Design</a></li>
+                        <li class="breadcrumb-item active">Web design 7</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                <div class="section_end"><span class="cross"><span class="cross_text">&times;</span></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--      breadcrumb end-->
+     
+     <!-- button start -->
+     <section id="button" class=" py-5" data-spy="scroll" data-target="#navbarCollapse">
+         <div class="container">
+             <div class="row mb-4">
+                 <div class="col">
+                     <h1 class="display-4 text-center text-success">Button & Button Group</h1>
+                     <p class="text-center lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quas facilis ad.</p>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col-md-7 mx-auto mb-4">
+                     <h1 class="text-uppercase text-info mb-4 bottom_border">Button with color</h1>
+                     <button type="button" class="btn btn-primary mb-2">Primary</button>
+                     <button type="button" class="btn btn-secondary mb-2">Secondary</button>
+                     <button type="button" class="btn btn-success mb-2">Success</button>
+                     <button type="button" class="btn btn-info mb-2">Info</button>
+                     <button type="button" class="btn btn-warning mb-2">Warning</button>
+                     <button type="button" class="btn btn-danger mb-2">Danger</button>
+                     <button type="button" class="btn btn-light mb-2">Light</button>
+                     <button type="button" class="btn btn-dark mb-2">Dark</button>
+                     <button type="button" class="btn btn-link mb-2">Link</button>
+                 </div>
+                 <div class="col-md-7 mx-auto mb-4">
+                     <h1 class="text-uppercase text-info mb-4 bottom_border">Button with outline</h1>
+                     <button class="btn btn-outline-primary mb-2">Primary</button>
+                     <button class="btn btn-outline-secondary mb-2">Secondary</button>
+                     <button class="btn btn-outline-success mb-2">Success</button>
+                     <button class="btn btn-outline-info">Info</button>
+                     <button class="btn btn-outline-warning mb-2">Warning</button>
+                     <button class="btn btn-outline-danger mb-2">Danger</button>
+                     <button class="btn btn-outline-dark mb-2">Dark</button>
+                     <button class="btn btn-outline-link mb-2">Link</button>
+                 </div>
+                 <div class="col-md-9 mx-auto mb-4">
+                     <h1 class="text-uppercase text-info mb-4 bottom_border">Large Button</h1>
+                     <button class="btn btn-primary btn-lg mb-2">primary</button>
+                     <button class="btn btn-secondary btn-lg mb-2">Secondary</button>
+                     <button class="btn btn-success btn-lg mb-2">success</button>
+                     <button class="btn btn-info btn-lg">info</button>
+                     <button class="btn btn-warning btn-lg mb-2">Warning</button>
+                     <button class="btn btn-danger btn-lg mb-2">Danger</button>
+                     <button class="btn btn-light btn-lg mb-2">Light</button>
+                     <button class="btn btn-dark btn-lg mb-2">Dark</button>
+                     <button class="btn btn-link btn-lg mb-2">Link</button>
+                 </div>
+                 <div class="col-md-6 mx-auto mb-4">
+                     <h1 class="text-uppercase text-info bottom_border">Block Button</h1>
+                     <button class="btn btn-primary btn-block mb-2">Primary</button>
+                     <button class="btn btn-secondary btn-block mb-2">Secondary</button>
+                     <button class="btn btn-success btn-block mb-2">Success</button>
+                     <button class="btn btn-info btn-block mb-2">Info</button>
+                     <button class="btn btn-warning btn-block mb-2">Warning</button>
+                     <button class="btn btn-danger btn-block mb-2">Danger</button>
+                     <button class="btn btn-dark btn-block mb-2">Dark</button>
+                     <button class="btn btn-link btn-block mb-2">Link</button>
+                 </div>
+                 <div class="col-md-6 mx-auto mb-4">
+                     <h1 class="text-uppercase text-info bottom_border">Block Button</h1>
+                     <button class="btn btn-outline-primary btn-block mb-2">Primary</button>
+                     <button class="btn btn-outline-secondary btn-block mb-2">Secondary</button>
+                     <button class="btn btn-outline-success btn-block mb-2">Success</button>
+                     <button class="btn btn-outline-info btn-block mb-2">Info</button>
+                     <button class="btn btn-outline-warning btn-block mb-2">Warning</button>
+                     <button class="btn btn-outline-danger btn-block mb-2">Danger</button>
+                     <button class="btn btn-outline-dark btn-block mb-2">Dark</button>
+                     <button class="btn btn-outline-link btn-block mb-2">Link</button>
+                 </div>
+                 <div class="col-md-9 mx-auto mb-4">
+                     <h1 class="text-uppercase text-info bottom_border mb-4">Button Group </h1>
+                     <div class="btn-group mb-3">
+                         <button class="btn btn-primary">Primary</button>
+                         <button class="btn btn-primary">primary</button>
+                         <button class="btn btn-primary">primary</button>
+                     </div>
+                     <div class="btn-group mb-3">
+                         <button class="btn btn-secondary">Secondary</button>
+                         <button class="btn btn-secondary">Secondary</button>
+                         <button class="btn btn-secondary">Secondary</button>
+                     </div>
+                     <div class="btn-group mb-3">
+                         <button class="btn btn-success">Success</button>
+                         <button class="btn btn-success">Success</button>
+                         <button class="btn btn-success">Success</button>
+                     </div>
+                     <div class="btn-group mb-3 btn-group-toggle" data-toggle="buttons">
+                         <label for="button" class="btn btn-primary active">
+                             <input type="radio" name="radios" autocomplete="off" checked>Primary
+                         </label>
+                         <label for="button" class="btn btn-primary">
+                             <input type="radio" name="radios" autocomplete="off">Secondary
+                         </label>
+                         <label for="button" class="btn btn-primary">
+                             <input type="radio" name="radios" autocomplete="off">Success
+                         </label>
+                     </div>
+                 </div>
+                 <div class="col-md-7 mx-auto">
+                     <h1 class="text-uppercase text-info mb-4 bottom_border">Button vertical</h1>
+                     <div class="btn-group btn-group-vertical">
+                         <button class="btn btn-primary">Primary</button>
+                         <button class="btn btn-secondary">secondary</button>
+                         <button class="btn btn-success">success</button>
+                         <button class="btn btn-info">info</button>
+                         <button class="btn btn-warning">Warning</button>
+                         <button class="btn btn-danger">danger</button>
+                     </div>
+                 </div>
+             </div>
+             <div class="row">
+                <div class="col text-center">
+                <div class="section_end"><span class="cross"><span class="cross_text">&times;</span></span></div>
+                </div>
+            </div>
+         </div>
+     </section>
+     <!-- button end -->
+     
+     <!-- card start -->
+     <section id="card">
+         <div class="container">
+             <div class="row mb-4">
+                 <div class="col">
+                     <h1 class="display-4 text-center text-success">Card</h1>
+                     <p class="text-center lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quas facilis ad.</p>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col-md-4">
+                     <div class="card">
+                         <div class="card-header">
+                             <h3>Card Header</h3>
+                         </div>
+                         <div class="card-body">
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur rem esse labore culpa veritatis error odio ipsum fuga quidem quod, sit, dolor delectus harum molestiae, itaque neque, molestias dignissimos aliquam dolore voluptates laboriosam. Nemo voluptates unde quo molestias enim consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam vel quidem aspernatur, ducimus repudiandae harum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias itaque totam earum provident, fugit grisghasd.
+                         </div>
+                         <div class="card-footer">
+                             <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="col-md-4">
+                     <div class="card">
+                         <div class="card-body">
+                             <h2 class="card-title">Card title</h2>
+                             <h4 class="card-subtitle mb-3">Card subtitle</h4>
+                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore illo, beatae nemo. Totam, voluptas id nesciunt deserunt, repudiandae repellendus sit rem incidunt, nostrum facere maiores beatae harum ipsum eius molestias ea, laudantium magni. Quisquam, fugit, vel. Ullam minus quos consequuntur optio officiis, magni, itaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae qui facere accusamus? Delectus, doloribus. Veritatis perspiciatis, commodi voluptatibus, eius voluptate repellat ullam quasi aliquid, nobis dicta ea eos harum ducimus!</p>
+                             <a href="#" class="card-link">Card link 1</a>
+                             <a href="#" class="card-link">Card link 2</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="col-md-4">
+                     <div class="card">
+                         <img src="images/client1.jpg" alt="" class="card-img-top">
+                         <div class="card-body">
+                             <div class="card-title">
+                                 <h3>Person Name</h3>
+                                 <p class="card-subtitle mb-3">Profession</p>
+                                 <a href="#" class="card-link">See More</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="row">
+                <div class="col text-center">
+                <div class="section_end"><span class="cross"><span class="cross_text">&times;</span></span></div>
+                </div>
+            </div>
+         </div>
+     </section>
+     <!-- card end -->
+     
+     <!-- carousel start -->
+     <section id="carousel" class="py-5">
+        <div class="row py-4">
+            <div class="col">
+                <h1 class="display-4 text-center text-success">Carousel</h1>
+                     <p class="text-center lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quas facilis ad.</p>
+            </div>
+        </div>
+         <div class="carousel slide" data-ride="carousel">
+             <div class="carousel-inner">
+                 <div class="carousel-item active">
+                     <img src="images/project1.jpg" class="d-block mx-auto" alt="">
+                 </div>
+                 <div class="carousel-item">
+                     <img src="images/project2.jpg" class="d-block mx-auto" alt="">
+                 </div>
+                 <div class="carousel-item">
+                     <img src="images/project3.jpg" class="d-block mx-auto" alt="">
+                 </div>
+             </div>
+         </div>
+         <div id="carousel2" class="carousel slide my-4" data-ride="carousel">
+             <ul class="carousel-indicators">
+                 <li data-target="#carousel2" data-slide-to="0" class="active"></li>
+                 <li data-target="#carousel2" data-slide-to="1"></li>
+                 <li data-target="#carousel2" data-slide-to="2"></li>
+             </ul>
+             <div class="carousel-inner">
+                  <div class="carousel-item active" data-interval="2500">
+                      <img src="images/project2.jpg" class="d-block mx-auto" alt="">
+                      <div class="carousel-caption">
+                          <h2>Slider 1</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, quidem?</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item" data-interval="2500">
+                      <img src="images/project3.jpg" class="d-block mx-auto" alt="">
+                      <div class="carousel-caption">
+                          <h2>Slider 2</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, recusandae!</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item" data-interval="2500">
+                      <img src="images/project4.jpg" class="d-block mx-auto" alt="">
+                      <div class="carousel-caption">
+                          <h2>Slider 3</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, quam.</p>
+                      </div>
+                  </div>
+             </div>
+             <a href="#carousel2" class="carousel-control-prev" data-slide="prev">
+                 <span class="carousel-control-prev-icon"></span>
+             </a>
+             <a href="#carousel2" class="carousel-control-next" data-slide="next">
+                 <span class="carousel-control-next-icon"></span>
+             </a>
+         </div>
+     </section>
+     <!-- carousel end -->
+     
+     <!-- accordion start -->
+     <section id="collapsableAccordion" class="py-5">
+         <div class="container">
+             <div class="row py-4">
+                 <div class="col">
+                     <h1 class="display-4 text-center text-success">Accordion</h1>
+                     <p class="text-center lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quas facilis ad.</p>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col">
+                     <div id="accordion">
+                         <div class="card">
+                             <div class="card-header">
+                                 <a href="#collapseOne" data-toggle="collapse">Collapse 1</a>
+                             </div>
+                             <div class="collapse show" id="collapseOne" data-parent="#accordion">
+                                 <div class="card-body">
+                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum repudiandae aspernatur laborum, quia maxime commodi tempore harum magnam corrupti nihil, et velit culpa veritatis nisi odio laboriosam voluptatem quo unde saepe, officia aliquam accusantium animi sed vitae! Deserunt debitis reiciendis, provident quam excepturi quaerat.
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="card">
+                             <div class="card-header">
+                                 <button class="btn btn-link" data-target="#collapse2" data-toggle="collapse">Collapse 2</button>
+                             </div>
+                             <div class="collapse" id="collapse2">
+                                 <div class="card-body">
+                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, dicta officiis quam autem veritatis necessitatibus repellendus, quaerat nihil impedit libero sunt rem adipisci sapiente obcaecati sequi minima, esse ipsum corporis voluptatum delectus mollitia architecto. Ut quam error reiciendis atque, voluptatum ullam obcaecati non, ad. Provident.
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="card">
+                             <div class="card-header">
+                                 <button class="btn btn-link" data-target="#collapse3" data-toggle="collapse">Collapse 3</button>
+                             </div>
+                             <div class="collapse" id="collapse3">
+                                 <div class="card-body">
+                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, unde, provident molestias minima, porro debitis ullam in officiis illo culpa dolor beatae, suscipit omnis deleniti esse. Ipsum impedit repellat voluptas quos quae ullam delectus fuga suscipit cum deleniti, labore distinctio temporibus, consequuntur, voluptatibus est.
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="row">
+                <div class="col text-center">
+                <div class="section_end"><span class="cross"><span class="cross_text">&times;</span></span></div>
+                </div>
+            </div>
+         </div>
+     </section>
+     <!-- accordion end -->
+     
+     <!-- Dropdown start -->
+     <section id="dropdown">
+         <div class="container">
+             <div class="row py-4">
+                 <div class="col">
+                     <h1 class="display-4 text-center text-success">Dropdown</h1>
+                     <p class="text-center lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quas facilis ad.</p>
+                 </div>
+             </div>
+             <div class="row" style="height: 400px;">
+                 <div class="col">
+                     <ul class="list-inline">
+                         <li class="list-inline-item">
+                             <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Primary</a>
+                             <div class="dropdown-menu" id="drop1">
+                                <a href="#" class="dropdown-item">Project 1</a>
+                                <a href="#" class="dropdown-item">Project 2</a>
+                                <a href="#" class="dropdown-item">Project 3</a>
+                                <a href="#" class="dropdown-item">Project 4</a>
+                             </div>
+                         </li>
+                         <li class="list-inline-item dropdown">
+                             <a href="#" class="dropdown-toggle btn btn-secondary" data-toggle="dropdown">Secondary</a>
+                             <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="#">Project 1</a>
+                                 <a class="dropdown-item" href="#">Project 2</a>
+                                 <a class="dropdown-item" href="#">Project 3</a>
+                                 <a class="dropdown-item" href="#">Project 4</a>
+                                 <a class="dropdown-item" href="#">Project 5</a>
+                             </div>
+                         </li>
+                         <li class="list-inline-item dropdown">
+                             <a href="#" class="dropdown-toggle btn btn-success" data-toggle="dropdown">Secondary</a>
+                             <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="#">Project 1</a>
+                                 <a class="dropdown-item" href="#">Project 2</a>
+                                 <a class="dropdown-item" href="#">Project 3</a>
+                                 <a class="dropdown-item" href="#">Project 4</a>
+                                 <a class="dropdown-item" href="#">Project 5</a>
+                             </div>
+                         </li>
+                         <li class="list-inline-item dropdown">
+                             <div class="btn-group">
+                                 <button class="btn btn-info">Info</button>
+                                 <button class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+                                 <div class="dropdown-menu">
+                                     <a class="dropdown-item" href="#">Project 1</a>
+                                     <a class="dropdown-item" href="#">Project 2</a>
+                                     <a class="dropdown-item" href="#">Project 3</a>
+                                     <a class="dropdown-item" href="#">Project 4</a>
+                                     <a class="dropdown-item" href="#">Project 5</a>
+                                 </div>
+                             </div>
+                         </li>
+                     </ul>
+                 </div>
+             </div>
+             <div class="row">
+                <div class="col text-center">
+                <div class="section_end"><span class="cross"><span class="cross_text">&times;</span></span></div>
+                </div>
+            </div>
+         </div>
+     </section>
+     <!-- Dropdown end -->
+     
+     <!-- form start -->
+     <section id="form" class="py-5">
+         <div class="container">
+             <div class="row py-4">
+                 <div class="col">
+                     <h1 class="display-4 text-center text-success">Form</h1>
+                     <p class="text-center lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quas facilis ad.</p>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col-md-8 mx-auto">
+                     <form class="my-4">
+                         <div class="form-group">
+                             <label for="email">Email: </label>
+                             <input type="email" class="form-control" placeholder="Email" id="email" name="email">
+                             <small class="text-muted">We won't share your email with others.</small>
+                         </div>
+                         <div class="form-group">
+                             <label for="password">Password: </label>
+                             <input type="password" placeholder="Password" class="form-control">
+                         </div>
+                         <div class="form-group">
+                             <label for="select"> Select Option</label>
+                             <select name="select" id="select" class="form-control" multiple>
+                                 <option>1</option>
+                                 <option>2</option>
+                                 <option>3</option>
+                                 <option>4</option>
+                                 <option>5</option>
+                                 <option>6</option>
+                             </select>
+                         </div>
+                         <div class="form-group">
+                             <textarea name="textare" id="textarea" cols="30" rows="5" class="form-control"></textarea>
+                         </div>
+                         <div class="form-group">
+                             <input type="file" class="form-control-file">
+                         </div>
+                         <div class="form-group form-check">
+                             <input type="checkbox" class="form-check-input" id="checkbox">
+                             <label for="checkbox" class="form-check-label">Check me out</label>
+                         </div>
+                         <button type="submit" class="btn btn-success">Submit</button>
+                     </form>
+                     <form class="form-inline my-3">
+                         <div class="input-group">
+                             <div class="input-group-prepand">
+                                 <div class="input-group-text">@</div>
+                             </div>
+                             <input type="email" class="form-control" placeholder="Email">
+                         </div>
+                         <div class="input-group ml-2">
+                             <div class="input-group-prepand">
+                                 <div class="input-group-text">&#8471;</div>
+                             </div>
+                             <input type="password" class="form-control">
+                         </div>
+                         <div class="form-group form-check ml-2">
+                             <input type="checkbox" class="form-check-input">
+                             <label for="inputCheckbox" class="form-check-label">Remember me</label>
+                         </div>
+                         <button class="btn btn-info ml-2">Submit</button>
+                     </form>
+                 </div>
+             </div>
+             <div class="row">
+                <div class="col text-center">
+                <div class="section_end"><span class="cross"><span class="cross_text">&times;</span></span></div>
+                </div>
+            </div>
+         </div>
+     </section>
+     <!-- form end -->
+     
+     <!-- jumbotron start -->
+     <section id="jumbotron" class="py-5">
+         <div class="container">
+             <div class="row">
+                 <div class="col">
+                     <h1 class="display-4 text-center text-success">Jumbotron</h1>
+                     <p class="text-center lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quas facilis ad.</p>
+                 </div>
+             </div>
+         </div>
+         <div class="jumbotron">
+             <div class="container">
+                 <h1>Header title</h1>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis maiores corporis at voluptate asperiores ad illum et non. Delectus, ullam!</p>
+             </div>
+         </div>
+         <div class="jumbotron jumbotron-fluid my-3">
+             <h1>header title</h1>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ad cumque magnam dolore. Harum voluptas, nemo et dolorum perspiciatis, maxime eos quasi dolor, fugit ad id explicabo, pariatur nulla blanditiis!</p>
+         </div>
+         <div class="jumbotron">
+             <div class="container-fluid">
+                 <h1>Header title</h1>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ducimus eius, quis doloribus officiis architecto nobis harum quo reiciendis doloremque reprehenderit ad odio eaque excepturi placeat quibusdam tenetur, et tempore cumque esse expedita omnis modi nisi. Incidunt saepe earum placeat repudiandae doloribus sed nulla!</p>
+             </div>
+         </div>
+         <div class="container">
+             <div class="jumbotron jumbotron-fluid px-2">
+                 <h1>header title</h1>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos a vero repellat nobis autem dolorum earum. Aut assumenda culpa molestias, ipsam dignissimos alias deleniti error voluptate, unde dolorum, blanditiis, reiciendis.</p>
+             </div>
+         </div>
+         <div class="row">
+            <div class="col text-center">
+            <div class="section_end"><span class="cross"><span class="cross_text">&times;</span></span></div>
+            </div>
+        </div>
+     </section>
+     <!-- jumbotron end -->
+     
+     <!-- list group start -->
+     <section id="listGroup" class="py-5">
+         <div class="container">
+            <div class="row">
+                 <div class="col">
+                     <h1 class="display-4 text-center text-success">List Group</h1>
+                     <p class="text-center lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quas facilis ad.</p>
+                 </div>
+             </div>
+             <div class="row my-2">
+                 <div class="col-md-6">
+                     <ul class="list-group">
+                         <li class="list-group-item active">List group Item 1</li>
+                         <li class="list-group-item">List group Item 2</li>
+                         <li class="list-group-item">List group Item 3</li>
+                         <li class="list-group-item">List group Item 4</li>
+                         <li class="list-group-item">List group Item 5</li>
+                         <li class="list-group-item">List group Item 6</li>
+                         <li class="list-group-item">List group Item 7</li>
+                         <li class="list-group-item">List group Item 8</li>
+                         <li class="list-group-item">List group Item 9</li>
+                         <li class="list-group-item">List group Item 10</li>
+                     </ul>
+                 </div>
+                 <div class="col-md-6">
+                     <ul class="list-group">
+                         <li class="list-group-item active">List group item 1</li>
+                         <li class="list-group-item list-group-item-primary">List group item 1</li>
+                         <li class="list-group-item list-group-item-secondary">List group item 2</li>
+                         <li class="list-group-item list-group-item-success">List group item 3</li>
+                         <li class="list-group-item list-group-item-info">List group item 4</li>
+                         <li class="list-group-item list-group-item-warning">List group item 5</li>
+                         <li class="list-group-item list-group-item-danger">List group item 6</li>
+                         <li class="list-group-item list-group-item-dark">List group item 7</li>
+                         <li class="list-group-item list-group-item-light">List group item 8</li>
+                         <li class="list-group-item">List group item 9</li>
+                     </ul>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col-md-11 mx-auto">
+                     <ul class="list-group list-group-horizontal">
+                         <li class="list-group-item">List group item 1</li>
+                         <li class="list-group-item">List group item 2</li>
+                         <li class="list-group-item">List group item 3</li>
+                         <li class="list-group-item">List group item 4</li>
+                         <li class="list-group-item">List group item 5</li>
+                         <li class="list-group-item">List group item 6</li>
+                     </ul>
+                 </div>
+             </div>
+             <div class="row">
+            <div class="col text-center">
+            <div class="section_end"><span class="cross"><span class="cross_text">&times;</span></span></div>
+            </div>
+        </div>
+         </div>
+     </section>
+     <!-- list group end -->
+     
+     <!-- media object start -->
+     <section id="mediaObject" class="py-5">
+         <div class="container">
+             <div class="row">
+                 <div class="col">
+                     <h1 class="display-4 text-center text-success">Media Object</h1>
+                     <p class="text-center lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quas facilis ad.</p>
+                 </div>
+             </div>
+             <div class="row my-3">
+                 <div class="col-md-6 mb-3">
+                     <div class="media">
+                         <img src="images/client1.jpg" class="align-self-start mr-3 d-block w-25" alt="">
+                         <div class="media-body">
+                             <h3>Lorem ipsum dolor sit amet, consectetur.</h3>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem illo unde quasi cupiditate, omnis provident at facere fugit voluptates nam?</p>
+                         </div>
+                     </div>
+                     <div class="media">
+                         <img src="images/client1.jpg" class="align-self-center mr-3 d-block w-25" alt="">
+                         <div class="media-body">
+                             <h3>Lorem ipsum dolor sit amet, consectetur.</h3>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem illo unde quasi cupiditate, omnis provident at facere fugit voluptates nam?</p>
+                         </div>
+                     </div>
+                     <div class="media">
+                         <img src="images/client1.jpg" class="align-self-end mr-3 d-block w-25" alt="">
+                         <div class="media-body">
+                             <h3>Lorem ipsum dolor sit amet, consectetur.</h3>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem illo unde quasi cupiditate, omnis provident at facere fugit voluptates nam?</p>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="col-md-6 mb-3">
+                     <div class="media">
+                         <div class="media-body text-right">
+                             <h3>Lorem ipsum dolor sit amet.</h3>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint beatae iure architecto suscipit praesentium quo corporis odit sapiente natus quis et, illo iusto iste? Dolor voluptatibus nam est et aspernatur!</p>
+                         </div>
+                         <img src="images/client2.jpg" alt="" class="w-25 d-block align-self-center ml-3">
+                     </div>
+                     <div class="media">
+                         <div class="media-body text-right">
+                             <h3>Lorem ipsum dolor sit amet.</h3>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint beatae iure architecto suscipit praesentium quo corporis odit sapiente natus quis et, illo iusto iste? Dolor voluptatibus nam est et aspernatur!</p>
+                         </div>
+                         <img src="images/client2.jpg" alt="" class="w-25 d-block align-self-center ml-3">
+                     </div>
+                     <div class="media">
+                         <div class="media-body text-right">
+                             <h3>Lorem ipsum dolor sit amet.</h3>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint beatae iure architecto suscipit praesentium quo corporis odit sapiente natus quis et, illo iusto iste? Dolor voluptatibus nam est et aspernatur!</p>
+                         </div>
+                         <img src="images/client2.jpg" alt="" class="w-25 d-block align-self-center ml-3">
+                     </div>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col text-center">
+                     <div class="section_end"><span class="cross"><span class="cross_text">&times;</span></span></div>
+                 </div>
+             </div>
+         </div>
+     </section>
+     <!-- media object end -->
+     
+     <!-- modal start -->
+     <section id="modal" tabindex="-1" class="py-5">
+         <div class="row py-3">
+                 <div class="col">
+                     <h1 class="display-4 text-center text-success">Modal</h1>
+                     <p class="text-center lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quas facilis ad.</p>
+                 </div>
+             </div>
+         <div class="container">
+             <button class="btn btn-block btn-info" data-toggle="modal" data-target="#myModal">Show modal</button>
+         <div class="modal fade" id="myModal">
+             <div class="modal-dialog modal-dialogue-centered">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                         <h3>Modal title here</h3>
+                         <div class="close" data-dismiss="modal">&times;</div>
+                     </div>
+                     <div class="modal-body">
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, odio, labore! Beatae fuga, rem, quas officia necessitatibus aliquam amet consectetur est pariatur reiciendis facere. Veniam odit possimus iure omnis dolor sed laboriosam repellendus facilis, eligendi magnam, quas suscipit ad molestias soluta ipsum, animi, fugit facere atque tempora eveniet aliquid culpa eos quam cum error. Recusandae quidem asperiores, numquam, nobis, explicabo, ipsam dicta cupiditate consequatur nihil velit accusantium magnam neque! Laborum voluptatem magni minima necessitatibus quo, reiciendis consectetur quisquam, consequatur at porro nulla? Molestias dolorem, tempora non quod, nemo rerum blanditiis saepe quae earum sequi vitae, iure deleniti repudiandae ullam. Neque.
+                     </div>
+                     <div class="modal-footer">
+                         <button class="btn btn-info">Save Message</button>
+                         <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         </div>
+         <div class="container">
+             <div class="row">
+                 <div class="col text-center">
+                     <div class="section_end"><span class="cross"><span class="cross_text">&times;</span></span></div>
+                 </div>
+             </div>
+         </div>
+     </section>
+     <!-- modal end -->
+     
+     <!-- nav start -->
+     <section id="nav" class="py-5">
+         <div class="container">
+            <div class="row py-3">
+                 <div class="col">
+                     <h1 class="display-4 text-center text-success">Nav</h1>
+                     <p class="text-center lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quas facilis ad.</p>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col">
+                     <ul class="nav justify-content-center">
+                         <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                         <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                         <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
+                         <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
+                         <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+                     </ul>
+                     <ul class="nav nav-pills my-4">
+                         <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                         <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                         <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
+                         <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
+                         <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+                     </ul>
+                     <ul class="nav nav-fill nav-pills justify-content-end my-4">
+                         <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                         <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                         <li class="nav-item"><a href="#" class="nav-link active">Skills</a></li>
+                         <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
+                         <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+                     </ul>
+                     <ul class="nav flex-column">
+                         <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                         <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                         <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                         <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+                         <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
+                     </ul>
+                     <ul class="nav nav-tabs my-4">
+                         <li class="item-item"><a href="#home" data-toggle="tab" class="nav-link">Home</a></li>
+                         <li class="nav-item"><a href="#about" data-toggle="tab" class="nav-link active">About</a></li>
+                         <li class="nav-item"><a href="#skills" data-toggle="tab" class="nav-link">Skills</a></li>
+                         <li class="nav-item"><a href="#gallery" data-toggle="tab" class="nav-link">Gallery</a></li>
+                         <li class="nav-item"><a href="#portfolio" data-toggle="tab" class="nav-link">Porfolio</a></li>
+                     </ul>
+                     <div class="tab-content">
+                         <div class="tab-pane" id="home">
+                             <h1>Home Header</h1>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus tempore est hic iste voluptate, repellat facere architecto corporis quo. Eum nesciunt quaerat aperiam quia iusto quas deleniti reprehenderit beatae sint id hic aut voluptas accusantium ratione dignissimos pariatur, temporibus eos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat repellat dignissimos ducimus, non dicta error laboriosam hic, officiis quisquam, voluptates explicabo ex dolorem exercitationem debitis! Reiciendis cumque, tenetur totam sed quo fugiat iste quibusdam atque, ipsa animi fugit vero nisi hic harum, quisquam pariatur maiores, dolores laudantium dolore mollitia quae? Hic unde harum nisi, consectetur est facilis quaerat ab tempore laboriosam at praesentium iusto aspernatur, quas perspiciatis nesciunt corrupti saepe doloribus maxime beatae, maiores aperiam, cumque reiciendis architecto. Aut necessitatibus dolorum voluptatem sequi magnam obcaecati dolores provident cum recusandae tempore in ea exercitationem esse, qui veritatis, odit minima autem eligendi.</p>
+                         </div>
+                         <div class="tab-pane" id="about">
+                             <h1>About Header</h1>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, cupiditate, quia. Facere vitae obcaecati, debitis voluptatum cum delectus esse, sit tenetur perferendis iste modi mollitia nesciunt enim fugiat a. Corporis, quisquam inventore. Esse repudiandae, ducimus, nostrum, nisi aut rerum officiis labore iste mollitia repellendus numquam. Repellat rem impedit perspiciatis aliquid, repellendus qui consequatur autem culpa quasi praesentium, iste commodi placeat error doloribus adipisci, corrupti assumenda doloremque dolorum hic dolores blanditiis, illo corporis possimus. A minima rem et quae obcaecati, rerum ut odio deleniti culpa in maiores, eos dolorum. Voluptatibus, ipsum culpa eveniet nesciunt numquam error eaque ea ratione suscipit molestias saepe maiores perferendis doloribus mollitia architecto porro sapiente placeat enim illum, dolor rem officiis. Delectus ab deserunt deleniti nostrum, velit porro adipisci. Eveniet praesentium, suscipit pariatur itaque provident libero repellendus nihil maiores id esse enim similique maxime tempora ea, aut!</p>
+                         </div>
+                         <div class="tab-pane" id="skills">
+                             <h1>Skills Header</h1>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum temporibus tenetur neque vitae, quaerat excepturi sed veritatis in molestias ab, voluptas dolorem repellendus hic cumque reprehenderit reiciendis eos adipisci alias? Necessitatibus eos enim, unde facere nostrum voluptate sapiente iure voluptatem tempore, culpa nam. Veniam perferendis beatae, reprehenderit, odit similique ipsam adipisci porro incidunt voluptatum iure obcaecati ipsa quos debitis, id aspernatur fugit? Necessitatibus, blanditiis architecto rerum eveniet error a quos iusto exercitationem illum quisquam asperiores dolorem possimus doloremque quaerat aperiam ducimus, odit sequi unde sit numquam eaque recusandae voluptatum consequatur atque! Quae quaerat, esse facere ipsam adipisci repellendus vel est voluptatibus, doloribus labore recusandae quo animi, dolor placeat molestiae possimus dignissimos fugit similique ducimus inventore! Impedit consequatur officiis voluptatem, expedita esse adipisci quo voluptas, quibusdam, harum incidunt dolores sint et! Nulla doloremque voluptates ipsam ipsum minus qui repudiandae pariatur vero.</p>
+                         </div>
+                         <div class="tab-pane" id="gallery">
+                             <h1>Gallery Header</h1>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In ad corrupti provident incidunt impedit magnam explicabo dicta porro, enim nulla suscipit sequi rem est illum vel quia minus, cupiditate corporis eos autem illo officiis, expedita maxime accusamus dolorum. Distinctio temporibus, explicabo laudantium quod ad qui tenetur natus cumque perferendis, eius doloremque molestias adipisci in! Aliquam accusamus consequuntur sit obcaecati aut dolores, voluptatum a doloribus, minus voluptas sint, eum labore quae rerum sequi. Voluptatem ipsum, cumque aut assumenda aspernatur? Vero sequi tempore sed delectus vitae aliquam soluta assumenda quo ducimus enim modi ut qui eius aperiam ipsam ex quisquam, facere, a. Ex itaque delectus magnam dolorem temporibus autem dolorum sequi adipisci consectetur quae quibusdam quia expedita aliquam odio, omnis, at est. Eius doloremque officia quam, eos odio doloribus reprehenderit cum. Quasi quidem quo illum fugiat ea repellendus fugit totam possimus accusamus?</p>
+                         </div>
+                         <div class="tab-pane" id="portfolio">
+                             <h1>Portfolio Header</h1>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam nulla, animi, tenetur magnam sit beatae recusandae maxime sequi, quos qui reprehenderit voluptate libero nihil provident fugit odit et alias. Reiciendis repudiandae, ducimus laboriosam numquam nulla commodi mollitia nemo adipisci id nesciunt dolores omnis ratione vitae architecto excepturi. Qui blanditiis sed atque quo enim recusandae quis dolorem beatae earum accusamus sapiente doloribus adipisci vero minima provident error, hic doloremque, dolor ab laboriosam, suscipit. Explicabo distinctio sint rerum eveniet reiciendis quod quibusdam, accusantium nemo ullam, fugit, numquam dolorem. Assumenda tenetur temporibus minima soluta iure quo, suscipit dolorum molestiae facilis officiis, iste commodi! Facere reiciendis eos sequi illo. Similique assumenda eius architecto adipisci labore aliquam, maxime reiciendis ducimus eveniet velit ea accusantium commodi delectus aperiam expedita illum ex culpa repellat! Repellendus quidem, provident veritatis! Pariatur voluptatibus eos, modi unde minima reiciendis laudantium eius.</p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col text-center">
+                     <div class="section_end"><span class="cross"><span class="cross_text">&times;</span></span></div>
+                 </div>
+             </div>
+         </div>
+     </section>
+     <!-- nav end -->
+     
+     <!-- navbar start -->
+     <section id="navbar" class="py-5">
+         <div class="container">
+            <div class="row py-3">
+                 <div class="col">
+                     <h1 class="display-4 text-center text-success">Navbar</h1>
+                     <p class="text-center lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quas facilis ad.</p>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col">
+                     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                         <a href="#" class="navbar-brand">Logo</a>
+                         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                             <span class="navbar-toggler-icon"></span>
+                         </button>
+                         <div class="collapse navbar-collapse" id="navbarCollapse">
+                             <ul class="navbar-nav">
+                                 <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
+                                 <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                                 <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+                                 <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                                 <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                             </ul>
+                             <form class="form-inline ml-auto">
+                                 <input type="search" class="form-control" placeholder="Search">
+                                 <button class="btn btn-outline-success ml-md-1">Search</button>
+                             </form>
+                         </div>
+                     </nav>
+                    <nav class="navbar navbar-expand-sm navbar-dark custom-bg-1 my-3">
+                        <a href="#" class="navbar-brand">Logo</a>
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse2">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse2">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                            </ul>
+                            <form class="form-inline ml-auto">
+                                <input type="search" class="form-control">
+                                <button class="btn btn-info ml-md-2" type="button">Search</button>
+                            </form>
+                        </div>
+                    </nav>
+                    <nav class="navbar navbar-expand-sm navbar-dark custom-bg-2 my-3">
+                        <a href="#" class="navbar-brand">Logo</a>
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse3">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse3">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                            </ul>
+                            <form class="form-inline">
+                                <input type="search" class="form-control">
+                                <button class="btn btn-light ml-md-2" type="button">Search</button>
+                            </form>
+                        </div>
+                    </nav>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col text-center">
+                     <div class="section_end"><span class="cross"><span class="cross_text">&times;</span></span></div>
+                 </div>
+             </div>
+         </div>
+     </section>
+     <!-- navbar end -->
+     
+     <!-- pagination start -->
+     <section id="pagination" class="py-5">
+         <div class="container">
+             <div class="row py-3">
+                 <div class="col">
+                     <h1 class="display-4 text-center text-success">Pagination</h1>
+                     <p class="text-center lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quas facilis ad.</p>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col">
+                     <nav>
+                         <ul class="pagination">
+                             <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                             <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                             <li class="page-item"><a href="#" class="page-link">2</a></li>
+                             <li class="page-item"><a href="#" class="page-link">3</a></li>
+                             <li class="page-item"><a href="#" class="page-link">4</a></li>
+                             <li class="page-item"><a href="#" class="page-link">5</a></li>
+                             <li class="page-item"><a href="#" class="page-link">6</a></li>
+                             <li class="page-item"><a href="#" class="page-link">...</a></li>
+                             <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                         </ul>
+                     </nav>
+                     <nav class="mt-2">
+                         <ul class="pagination pagination-lg justify-content-center">
+                             <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                             <li class="page-item"><a href="#" class="page-link">1</a></li>
+                             <li class="page-item"><a href="#" class="page-link">2</a></li>
+                             <li class="page-item"><a href="#" class="page-link">3</a></li>
+                             <li class="page-item active"><a href="#" class="page-link">4</a></li>
+                             <li class="page-item"><a href="#" class="page-link">5</a></li>
+                             <li class="page-item"><a href="#" class="page-link">6</a></li>
+                             <li class="page-item"><a href="#" class="page-link">...</a></li>
+                             <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                         </ul>
+                     </nav>
+                     <nav class="mt-2">
+                         <ul class="pagination justify-content-end">
+                             <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                             <li class="page-item"><a href="#" class="page-link">1</a></li>
+                             <li class="page-item"><a href="#" class="page-link">2</a></li>
+                             <li class="page-item"><a href="#" class="page-link">3</a></li>
+                             <li class="page-item active"><a href="#" class="page-link">4</a></li>
+                             <li class="page-item"><a href="#" class="page-link">5</a></li>
+                             <li class="page-item"><a href="#" class="page-link">6</a></li>
+                             <li class="page-item"><a href="#" class="page-link">...</a></li>
+                             <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                         </ul>
+                     </nav>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col text-center">
+                     <div class="section_end"><span class="cross"><span class="cross_text">&times;</span></span></div>
+                 </div>
+             </div>
+         </div>
+     </section>
+     <!-- pagination end -->
+      
+      <!-- popover start -->
+      <section id="popover" class="py-5">
+          <div class="container">
+              <div class="row py-3">
+                 <div class="col">
+                     <h1 class="display-4 text-center text-success">Pagination</h1>
+                     <p class="text-center lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quas facilis ad.</p>
+                 </div>
+             </div>
+              <div class="row py-5">
+                  <div class="col text-center">
+                      <button class="btn btn-primary" data-toggle="popover" data-placement="bottom" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. minima totam. Facilis, odit!" data-trigger="focus">Popover on bottom</button>
+                      <a class="btn btn-success" tabindex="0" data-toggle="popover" data-trigger="focus" data-placement="top" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi accusantium aperiam sit facilis harum rerum magnam dolore quas, est ipsa.">Popover on top</a>
+                      <button class="btn btn-success" data-toggle="popover" title="Popover Header" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio recusandae nulla, soluta tempore nisi cumque earum, explicabo repudiandae consequuntur facilis!" data-placement="right" data-trigger="focus">Popover on right</button>
+                      <button class="btn btn-warning" title="Popover header" data-toggle="popover" data-placement="left" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea at aliquam vitae voluptatum consequuntur debitis alias unde delectus inventore! Fuga molestiae porro commodi cum quo." data-trigger="focus">Popover on left</button>
+                  </div>
+              </div>
+              <div class="row">
+                 <div class="col text-center">
+                     <div class="section_end"><span class="cross"><span class="cross_text">&times;</span></span></div>
+                 </div>
+             </div>
+          </div>
+      </section>
+      <!-- popover end -->
+      
+      <!-- progress bar start -->
+      <section id="progressBar" class="py-5">
+          <div class="container">
+              <div class="row py-3">
+                 <div class="col">
+                     <h1 class="display-4 text-center text-success">Progress Bar</h1>
+                     <p class="text-center lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quas facilis ad.</p>
+                 </div>
+             </div>
+              <div class="row py-5">
+                  <div class="col-md-6 col-sm-8 mx-auto">
+                     HTML
+                      <div class="progress bg-dark mb-3" style="height: 20px">
+                          <div class="progress-bar" style="width: 60%">60%</div>
+                      </div>
+                      CSS
+                      <div class="progress bg-dark mb-3" style="height: 20px">
+                          <div class="progress-bar bg-warning progress-bar-striped" style="width: 76%">76%</div>
+                      </div>
+                      JavaScript
+                      <div class="progress bg-dark" style="height: 20px">
+                          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 82%">82%</div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-sm-8 mx-auto">
+                      PHP
+                      <div class="progress bg-dark mb-3" style="height: 20px">
+                          <div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated" style="width: 74%">74%</div>
+                      </div>
+                      WordPress
+                      <div class="progress bg-dark mb-3" style="height: 20px">
+                          <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 85%">85%</div>
+                      </div>
+                      MySQL
+                      <div class="progress bg-dark mb-3" style="height: 20px">
+                          <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 65%">65%</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                 <div class="col text-center">
+                     <div class="section_end"><span class="cross"><span class="cross_text">&times;</span></span></div>
+                 </div>
+             </div>
+          </div>
+      </section>
+      <!-- progress bar end -->
+      
+      <!-- spinner start -->
+      <section id="spinner" class="py-5">
+          <div class="container">
+              <div class="row py-3">
+                 <div class="col">
+                     <h1 class="display-4 text-center text-success">Spinner</h1>
+                     <p class="text-center lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quas facilis ad.</p>
+                 </div>
+             </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <button type="button" class="btn btn-secondary m-2">
+                          <span class="spinner-border spinner-border-sm text-primary"></span> Loading...
+                      </button>
+                      <button type="button" class="btn btn-primary m-2">
+                          <span class="spinner-border spinner-border-sm text-secondary"></span> Loading...
+                      </button>
+                      <button type="button" class="btn btn-secondary m-2">
+                          <span class="spinner-border spinner-border-sm text-success"></span> Loading...
+                      </button>
+                      <button type="button" class="btn btn-secondary m-2">
+                          <span class="spinner-border spinner-border-sm text-info"></span> Loading...
+                      </button>
+                      <button type="button" class="btn btn-secondary m-2">
+                          <span class="spinner-border spinner-border-sm text-warning"></span> Loading...
+                      </button>
+                      <button type="button" class="btn btn-secondary m-2">
+                          <span class="spinner-border spinner-border-sm text-danger"></span> Loading...
+                      </button>
+                      <button type="button" class="btn btn-secondary m-2">
+                          <span class="spinner-border spinner-border-sm text-dark"></span> Loading...
+                      </button>
+                      <button type="button" class="btn btn-secondary m-2">
+                          <span class="spinner-border spinner-border-sm text-light"></span> Loading...
+                      </button>
+                  </div>
+                  <div class="col-md-12">
+                      <button type="button" class="btn btn-info m-2  bg-dark">
+                          <span class="spinner-grow spinner-grow-sm text-primary"></span> Loading...
+                      </button>
+                      <button type="button" class="btn btn-info m-2  bg-dark">
+                          <span class="spinner-grow spinner-grow-sm text-secondary"></span> Loading...
+                      </button>
+                      <button type="button" class="btn btn-info m-2  bg-dark">
+                          <span class="spinner-grow spinner-grow-sm text-success"></span> Loading...
+                      </button>
+                      <button type="button" class="btn btn-info m-2  bg-dark">
+                          <span class="spinner-grow spinner-grow-sm text-info"></span> Loading...
+                      </button>
+                      <button type="button" class="btn btn-info m-2  bg-dark">
+                          <span class="spinner-grow spinner-grow-sm text-warning"></span> Loading...
+                      </button>
+                      <button type="button" class="btn btn-info m-2  bg-dark">
+                          <span class="spinner-grow spinner-grow-sm text-danger"></span> Loading...
+                      </button>
+                      <button type="button" class="btn btn-info m-2  bg-dark">
+                          <span class="spinner-grow spinner-grow-sm text-light"></span> Loading...
+                      </button>
+                      <button type="button" class="btn btn-info m-2  bg-dark">
+                          <span class="spinner-grow spinner-grow-sm"></span> Loading...
+                      </button>
+                  </div>
+              </div>
+              <div class="row">
+                 <div class="col text-center">
+                     <div class="section_end"><span class="cross"><span class="cross_text">&times;</span></span></div>
+                 </div>
+             </div>
+          </div>
+      </section>
+      <!-- spinner end -->
+      
+      <!-- toast start -->
+      <div id="toast" class="py-5">
+          <div class="container">
+              <div class="row py-3">
+                 <div class="col">
+                     <h1 class="display-4 text-center text-success">Tooltip</h1>
+                     <p class="text-center lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quas facilis ad.</p>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col text-center py-3">
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur.">Tooltip on top</button>
+                    <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="bottom" title="Lorem ipsum dolor sit amet, consectetur.">Tooltip on top</button>
+                     <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="left" title="Lorem ipsum dolor sit amet, consectetur.">Tooltip on top</button>
+                     <button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="left" title="Lorem ipsum dolor sit amet, consectetur.">Tooltip on top</button>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="col text-center">
+                     <div class="section_end"><span class="cross"><span class="cross_text">&times;</span></span></div>
+                 </div>
+             </div>
+          </div>
+      </div>
+      <!-- toast end -->
+      
+      
+      
+      
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

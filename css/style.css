@@ -1,0 +1,115 @@
+#header {
+    padding: 10px 0;
+    margin-bottom: 20px;
+    min-height: 60px;
+}
+.custom-header-bg {
+    background: linear-gradient(to right, rgba( 62, 212, 165, 0.814 ), rgba( 221, 248, 239, 0.736 ));
+}
+.box {
+    font-size: 18px;
+    text-align: center;
+    background: linear-gradient(to left, #63d381, #6963d3);
+    color: #fff;
+    padding: 5px;
+    box-shadow: 1px 2px 20px #000000;
+}
+
+/*navbar start*/
+#header .nav-link-custom {
+    font-size: 14px;
+    position: relative;
+}
+#header .active {
+    
+}
+#header .active::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #01AEF3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: width .4s;
+}
+#header .nav-link-custom::before {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #01AEF3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: width .4s;
+}
+#header .nav-link-custom:hover::before {
+    width: 100%;
+}
+#header .nav-link-custom:hover {
+    
+}
+.bb-4 {
+    border-bottom: 4px solid #def7f7;
+}
+
+.section_end {
+    margin: 20px 0;
+    position: relative;
+}
+.cross {
+    font-size: 30px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    z-index: 99;
+    background: #fff;
+    border: 1px solid #276262;
+    color: #276262;
+    padding: 6px;
+    position: relative;
+    transform: rotate(45deg);
+    top: 2.5px;
+}
+.cross_text {
+    font-weight: bold;
+    display: inline-block;
+    transform: rotate(-45deg);
+}
+.section_end::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #276262;
+    position: absolute;
+    left: 0;
+    top: 52%;
+    z-index: 1;
+}
+#breadcrumb {
+    background: linear-gradient(#5c6f6f, #212121);
+}
+.bottom_border {
+    border-bottom: 3px solid rgba( 64, 120, 144, 0.681 )
+}
+#collapsableAccordion {
+    background-color: #96b8c9;
+}
+#form {
+    background-color: #96c9a8;
+}
+#listGroup {
+    background-color: #96c9b5;
+}
+#nav {
+    background-color: #f2f1f8;
+}
+.custom-bg-1 {
+    background: linear-gradient(to right, #1c7b8b, #3d3d3d);
+}
+.custom-bg-2 {
+    background: linear-gradient(to right, #ca752f, #3d3d3d);
+}
+#pagination {
+    background-color: #cecede;
+}
